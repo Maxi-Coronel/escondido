@@ -112,8 +112,7 @@ main .margen {
     text-align: center;
     margin: .7em auto;
     color: #8eee8e;
-    grid-area: titulo;
-    border: 1px solid white; }
+    grid-area: titulo; }
   .footer .footer__p--copy {
     font-size: 12px;
     color: white;

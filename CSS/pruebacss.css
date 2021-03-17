@@ -208,7 +208,7 @@ main .margen {
       position: absolute;
       top: 0;
       left: 0;
-      width: 101%;
+      width: 100%;
       height: 100%; }
   .index .index__p, .index .index__p--prim, .index .index__p--segu {
     text-align: justify;
@@ -484,7 +484,7 @@ main .galeria .galeria__section {
     margin: 0 10px; }
     .contacto .contacto__form label {
       align-self: center;
-      text-align: left;
+      text-align: center;
       width: 22%;
       min-width: 90px; }
     .contacto .contacto__form .form-control {

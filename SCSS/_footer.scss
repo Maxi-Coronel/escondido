@@ -1,0 +1,112 @@
+.footer{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 77, 0));
+    box-shadow: -1px -2px 5px 1px rgb(80, 80, 80);
+    padding: .7em .7em;
+    font-size: .7em;
+    margin: 0;
+    .footer__ul{
+        display: flex;
+            justify-content: center;
+        margin: .7em 0;
+        grid-area: red_social;
+        li{
+            margin: 0 15px;
+            img{
+                width: 3em;
+            }
+        }
+    }
+    .footer__p{
+        font-size: large;
+        text-align: center;
+        margin: .7em 0;
+        color: $colorVerdeClaro;
+        grid-area: titulo;
+    }
+    .footer__p--copy{
+        font-size: 12px;
+        color: white;
+        grid-area: copy;
+        width: 90%;
+    }
+    address{
+        width: 100%;
+        margin: 0 auto;
+        grid-area: address;
+        ul{
+            display: flex;
+                flex-flow: column wrap;
+            text-align: center;
+            li{
+                margin: 2% 0;
+                color: $colorVerdeClaro;
+            }
+        }
+    }
+    .footer__form{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        padding: .2em .3em;
+        margin: 0 auto;
+        width: 90%;
+        color: $colorVerdeOscuro;
+        grid-area: newsletter;
+        label{
+            color: white;
+            text-align: center;
+            align-self: center;
+            min-width: 90px;
+            font-size: 1.5em;
+            padding: 10px 0;
+        }
+        .form-control{
+            background: rgb(81, 129, 75);
+            color: white;
+            width: 70%;
+            margin-right: 10px;
+            height: 3.7vw;
+            min-height: 30px;
+        }
+        .form-control:focus{
+            box-shadow: 0 0 5px .25rem rgb(95, 186, 72);
+            color: white;
+        }
+        .footer__form__button{
+            width: 7vw;
+            min-width: 30px;
+            height: 7vw;
+            min-height: 30px;
+            background-image: url("../Multimedia/Imagenes/iconos/vector-enviar-.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+        }
+    }
+}
+@media only screen and (min-width: 440px){
+    .footer{
+        display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "titulo red_social"
+            "address newsletter"
+            "address copy";
+        .footer__p{
+            font-size: 1.5em;
+            margin: .5em 0 0 0;
+        }
+        .footer__p--copy{
+            font-size: 12px;
+        }
+        .footer__form{
+            label{
+            margin: 0;
+            }
+            .footer__form__button{
+                width: 3.7vw;
+                height: 3.7vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.contacto{
+    margin: 15px;
+    .contacto__add{
+        address{
+            width: $anchoMax;
+        }
+        ul{
+            text-align: center;
+        }
+    }
+    .contacto__form{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        padding: .2em .3em;
+        margin: 0 10px;
+        label{
+            align-self: center;
+            text-align: left;
+            width: 22%;
+            min-width: 90px;
+        }
+        .form-control{
+            display: inline-block;
+            width: 75%;
+            height: 2.2em;
+            margin: 5px 0;
+            background: rgb(226, 226, 226);
+            color: $colorVerdeOscuro;
+        }
+        .form-control:focus{
+            box-shadow: 0 0 5px .25rem rgb(95, 186, 72);
+            color: $colorVerdeOscuro;
+        }
+        div{
+            width: $anchoMax;
+            text-align: center;
+        }
+    }
+    .contacto__ubic{
+            grid-area: ubicacion;
+        margin: 8px 0;
+        iframe{
+            width: 95%;
+            margin: 4px 2.5%;
+        }
+    }
+}
+@media only screen and (min-width: 640px){
+    .contacto{
+        display: grid;
+            grid-template-columns: 33% 66%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "address contactoForm"
+            "ubicacion ubicacion";
+        .contacto__add{
+            grid-area: address;
+            align-self: center;
+            justify-self: center;
+        }
+        .contacto__form{
+            grid-area: contactoForm;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}

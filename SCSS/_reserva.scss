@@ -1,0 +1,127 @@
+.reserva{
+    padding: 1em 0;
+    margin: 0 5px;
+    .reserva__section{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        padding: .2em .3em;
+        margin: 0 5px;
+        legend{
+            width: 100%;
+            text-align: center;
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+    }
+    .reserva__section--prim{
+        border-bottom: 3px dashed $colorVerdeOscuro;
+        label{
+            display: inline-block;
+            width: 26%;
+        }
+        .form-control{
+            width: 68%;
+            height: 2.2em;
+            margin: 4px 0;
+            color: $colorVerdeOscuro;
+        }
+        select{
+            width: 68%;
+            height: 2.2em;
+            margin: 4px 0;
+        }
+        .form-control:focus{
+            box-shadow: 0 0 5px .25rem rgb(95, 186, 72);
+            color: $colorVerdeOscuro;
+        }
+    }
+    .reserva__section--secu{
+        label{
+            width: 43%;
+            margin: 3px auto;
+            cursor: pointer;
+        }
+        input{
+            margin-right: 10px;
+        }
+    }
+    .reserva__section--terc{
+        border-bottom: 3px dashed $colorVerdeOscuro;
+        label{
+            width: 30%;
+            justify-self: center;
+            align-self: center;
+            text-align: center;
+            margin: 3px auto;
+            cursor: pointer;
+        }
+        input{
+            margin: 2%;
+        }
+    }
+    .reserva__section--cuar{
+        input{
+            font-size: .75em;
+            margin: 10px 1.5%;
+            width: ($anchoMax/3)-6%;
+            max-width: 115px;
+        }
+    }
+}
+@media only screen and (min-width: 640px){
+    .reserva{
+        display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            "reservaA reservaB"
+            "reservaA reservaC"
+            "reservaD reservaD";
+        .reserva__section--prim{
+            grid-area: reservaA;
+            width: 100%;
+            border-right: 3px dashed $colorVerdeOscuro;            
+        }
+        .reserva__section--secu{
+            grid-area: reservaB;
+        }
+        .reserva__section--terc{
+            grid-area: reservaC;
+        }
+        .reserva__section--cuar{
+            grid-area: reservaD;
+            input{
+                font-size: 1.2em;
+                width: 20%;
+                max-width: none;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1023px){
+    .reserva{
+        grid-template-columns: 42% 39% 19%;
+        grid-template-areas: 
+        "reservaA reservaB reservaD"
+        "reservaA reservaC reservaD";
+        .reserva__section--prim{
+            border-bottom: 0;          
+        }
+        .reserva__section--terc{
+            border-bottom: 0;
+        }
+        .reserva__section--cuar{
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            border-left: 3px dashed $colorVerdeOscuro;
+            input{
+                font-size: 1em;
+                width: 170px;
+                max-width: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+body{
+    @if $colorVerdeOscuro == #007001 {
+        background: rgb(163, 228, 161);
+    } @else{
+        background: url(../Multimedia/Imagenes/Fondo/dotted_pattern.png), radial-gradient($colorVerdeClaro, $colorVerdeOscuro);
+    }
+    .btn{
+        margin: 3px;
+        justify-content: center;
+        background-color: $colorVerdeClaro;
+    }
+    .btn:hover{
+        background-color: $colorVerdeOscuro;
+    }
+    .li__a{
+        color: $colorDorado !important;
+    }
+    .li__a:visited{
+        color: $colorDorado !important;
+    }
+}
+/* Nav */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    nav{
+        color: yellowgreen;
+        background: url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, linear-gradient($colorVerdeClaro, $colorVerdeOscuro);
+        background-size: 10vw, 20vw, 30vw, 40vw;
+        background-position: 38% top, center, right, left;
+        box-shadow: 1px 1px 15px 1px $colorSombra;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    flex: 1;
+                    font-size: 1em;
+                    text-align: center;
+                    margin-bottom: 7px;
+                    .li__a{
+                        color: $colorDorado;
+                    }
+                }
+            }
+            a {
+                img{
+                width: 25vw;
+                height: 13vw;
+                min-width: 100px;
+                min-height: 52px;
+                max-width: 200px;
+                max-height: 104px;
+                }
+            }
+        }
+    }
+main{
+    .margen{
+        visibility: hidden;
+        display: block;
+        width: 25vw;
+        height: 22vw;
+        min-width: 100px;
+        min-height: 75px;
+        max-width: 200px;
+        max-height: 150px;
+    }
+}
+.imgBoot{
+    width: 25vw;
+    height: 13vw;
+    min-width: 100px;
+    min-height: 52px;
+    max-width: 200px;
+    max-height: 104px;
+}
+@media only screen and (min-width: 640px){
+    html{
+    font-size: 2.3vw;
+    }
+    nav{
+        display: grid;
+            grid-template-columns: 50% 50%;
+        ul{
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+}
+@media only screen and (min-width: 1150px){
+    html{
+    font-size: 1.8vw;
+    }
+}

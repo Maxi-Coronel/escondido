@@ -19,9 +19,10 @@
     .footer__p{
         font-size: large;
         text-align: center;
-        margin: .7em 0;
+        margin: .7em auto;
         color: $colorVerdeClaro;
         grid-area: titulo;
+        border: 1px solid white;
     }
     .footer__p--copy{
         font-size: 12px;

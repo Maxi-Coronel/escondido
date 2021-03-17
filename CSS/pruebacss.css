@@ -110,9 +110,10 @@ main .margen {
   .footer .footer__p {
     font-size: large;
     text-align: center;
-    margin: .7em 0;
+    margin: .7em auto;
     color: #8eee8e;
-    grid-area: titulo; }
+    grid-area: titulo;
+    border: 1px solid white; }
   .footer .footer__p--copy {
     font-size: 12px;
     color: white;

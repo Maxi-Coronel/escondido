@@ -146,24 +146,27 @@ main .margen {
       font-size: 1.5em;
       padding: 10px 0; }
     .footer .footer__form .form-control {
-      background: #51814b;
+      background: rgba(255, 255, 255, 0.8);
       color: white;
       width: 70%;
       margin-right: 10px;
       height: 3.7vw;
       min-height: 30px; }
     .footer .footer__form .form-control:focus {
-      box-shadow: 0 0 5px 0.25rem #5fba48;
+      box-shadow: 0 0 5px 0.13rem #5fba48;
       color: white; }
     .footer .footer__form .footer__form__button {
       width: 7vw;
       min-width: 30px;
       height: 7vw;
       min-height: 30px;
-      background-image: url("../Multimedia/Imagenes/iconos/vector-enviar-.jpg");
+      background-image: url("../Multimedia/Imagenes/iconos/enviar.png");
       background-size: contain;
       background-repeat: no-repeat;
       border-radius: 10px; }
+    .footer .footer__form .footer__form__button:hover {
+      background-image: url("../Multimedia/Imagenes/iconos/enviar-1.png");
+      box-shadow: 0 0 5px 0.13rem #5fba48; }
 
 @media only screen and (min-width: 440px) {
   .footer {

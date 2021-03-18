@@ -1,31 +1,28 @@
 .index{
-    display: grid;
-        grid-template-areas:
-        "primerParrafo"
-        "img"
-        "segundoParrafo"
-        "iframe";
-        grid-template-columns: 90%;
-        justify-content: space-around;
-    margin: 10px;
-    img{
-        width: 80vw;
-        max-width: 440px;
-        margin: .5em auto;
-        border-radius: 10%;
-        box-shadow: 3px 3px 15px 5px;
-            grid-area: img;
+    position: relative;
+    h1{
+        position: absolute;
+        top: 70vh;
+        left: 10px;
+        color: white;
+        text-transform: uppercase;
+        grid-area: img;
     }
-    div{
-        align-self: center;
+    .index__div--img{
+        width: 100%;
+        height: 100vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        grid-area: img;
+    }
+    .index__div--iframe{
         position: relative;
         padding-bottom: 53.85%;
         height: 0;
         overflow: hidden;
-        margin: .5em;
-        border-radius: 10%;
-        box-shadow: 3px 3px 15px 5px;
-            grid-area: iframe;
         iframe{
             position: absolute;
             top:0;
@@ -33,10 +30,13 @@
             width: 100%;
             height: 100%;
         }
+        grid-area: iframe;
     }
     .index__p{
         text-align: justify;
+        padding: 3.5em .5em;
         margin: auto;
+        z-index: 5;
     }
     .index__p--prim{
         @extend .index__p;
@@ -47,34 +47,22 @@
         grid-area: segundoParrafo;
     }
 }
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 700px){
     .index{
+        margin-top: 100px;
         display: grid;
+            grid-template-areas: 
+            "img primerParrafo"
+            "segundoParrafo iframe";
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: 48% 48%;
-            grid-template-areas:
-            "primerParrafo img"
-            "iframe segundoParrafo";
-            justify-content: space-between;
-            align-self: center;
-            grid-column-gap: 1%;
-        img{
-            width: 46vw;
-            height: 26vw;
-            margin: auto;
-        }
-        iframe{
-            margin: 0 auto .5em;
-        }
-    }
-}
-@media only screen and (min-width: 767px){
-    .index{
-        img{
-            max-width: 100%;
-        }
         .index__p{
-            width: 90%;
+            text-align: justify;
+            padding: 3em ;
+            z-index: 3;
+        }
+        .index__div--iframe{
+            align-self: center;
         }
     }
 }

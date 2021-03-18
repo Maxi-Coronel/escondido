@@ -2,7 +2,7 @@ body{
     @if $colorVerdeOscuro == #007001 {
         background: rgb(163, 228, 161);
     } @else{
-        background: url(../Multimedia/Imagenes/Fondo/dotted_pattern.png), radial-gradient($colorVerdeClaro, $colorVerdeOscuro);
+        background: rgba(255, 255, 255, 0.753);
     }
     .btn{
         margin: 3px;
@@ -13,10 +13,10 @@ body{
         background-color: $colorVerdeOscuro;
     }
     .li__a{
-        color: $colorDorado !important;
+        color: #555555 !important;
     }
     .li__a:visited{
-        color: $colorDorado !important;
+        color: #555555 !important;
     }
 }
 /* Nav */
@@ -25,10 +25,10 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 6;
     nav{
-        color: yellowgreen;
-        background: url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, url(../Multimedia/Imagenes/Fondo/1.png) no-repeat, linear-gradient($colorVerdeClaro, $colorVerdeOscuro);
+        color: #555555;
+        background: rgba(255, 255, 255, 0.753);
         background-size: 10vw, 20vw, 30vw, 40vw;
         background-position: 38% top, center, right, left;
         box-shadow: 1px 1px 15px 1px $colorSombra;
@@ -37,22 +37,17 @@ header{
                 list-style: none;
                 li{
                     flex: 1;
-                    font-size: 1em;
-                    text-align: center;
+                    font-size: 1.3em;
+                    text-align: left;
                     margin-bottom: 7px;
-                    .li__a{
-                        color: $colorDorado;
-                    }
                 }
             }
-            a {
+            .navbar-brand {
+                width: 70%;
+                height: 100px;
                 img{
-                width: 25vw;
-                height: 13vw;
-                min-width: 100px;
-                min-height: 52px;
-                max-width: 200px;
-                max-height: 104px;
+                width: 100%;
+                height: auto;
                 }
             }
         }

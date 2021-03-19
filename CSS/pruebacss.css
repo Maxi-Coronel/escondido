@@ -3,18 +3,18 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  overflow: scroll; }
-  body a {
-    text-decoration: none;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 400; }
-  body main {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif; }
-  body ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
+body a {
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+
+body main {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 body {
   background: rgba(255, 255, 255, 0.753); }
@@ -57,15 +57,9 @@ header {
         width: 100%;
         height: auto; }
 
-main .margen {
-  visibility: hidden;
-  display: block;
-  width: 25vw;
-  height: 22vw;
-  min-width: 100px;
-  min-height: 75px;
-  max-width: 200px;
-  max-height: 150px; }
+.margen {
+  height: 130px;
+  visibility: hidden; }
 
 .imgBoot {
   width: 25vw;
@@ -76,8 +70,6 @@ main .margen {
   max-height: 104px; }
 
 @media only screen and (min-width: 640px) {
-  html {
-    font-size: 2.3vw; }
   nav {
     display: grid;
     grid-template-columns: 50% 50%; }
@@ -85,15 +77,11 @@ main .margen {
       align-items: flex-end;
       justify-content: flex-end; } }
 
-@media only screen and (min-width: 1150px) {
-  html {
-    font-size: 1.8vw; } }
-
 .footer {
   background: rgba(0, 0, 0, 0.863);
   box-shadow: -1px -2px 5px 1px #505050;
   padding: .7em .7em;
-  font-size: .7em;
+  font-size: 1em;
   margin: 0; }
   .footer .footer__ul {
     display: flex;
@@ -185,12 +173,13 @@ main .margen {
       height: 3.7vw; } }
 
 .index {
-  position: relative; }
-  .index h1 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.945); }
+  .index h2 {
     position: absolute;
-    top: 70vh;
+    top: 80vh;
     left: 10px;
-    color: white;
+    color: rgba(255, 255, 255, 0.945);
     text-transform: uppercase;
     grid-area: img; }
   .index .index__div--img {
@@ -214,11 +203,10 @@ main .margen {
       width: 100%;
       height: 100%; }
   .index .index__p, .index .index__p--prim, .index .index__p--segu {
-    font-size: 1.25em;
+    font-size: 1em;
     text-align: justify;
     padding: 3.5em 15px;
-    margin: auto;
-    z-index: 5; }
+    margin: 0; }
   .index .index__p--prim {
     grid-area: primerParrafo; }
   .index .index__p--segu {
@@ -226,16 +214,29 @@ main .margen {
 
 @media only screen and (min-width: 700px) {
   .index {
-    margin-top: 100px;
     display: grid;
-    grid-template-areas: "img primerParrafo" "segundoParrafo iframe";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-    .index .index__p, .index .index__p--prim, .index .index__p--segu {
-      font-size: .9em;
+    grid-template-rows: 100vh auto;
+    grid-template-areas: "img primerParrafo" "segundoParrafo iframe"; }
+    .index h2 {
+      font-size: 3em; }
+    .index .index__p--prim {
+      font-size: 1.2em;
       text-align: justify;
+      background-color: rgba(0, 0, 0, 0.952);
+      color: white;
+      width: 100%;
+      height: 100%;
+      padding: 35% 3.5em; }
+      .index .index__p--prim b {
+        display: block;
+        font-size: 3em; }
+    .index .index__p--segu {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.849);
       padding: 3em;
-      z-index: 3; }
+      font-size: 1.2em; }
     .index .index__div--iframe {
       align-self: center; } }
 
@@ -316,6 +317,12 @@ main .galeria .galeria__section {
         color: #005200;
         font-weight: 700;
         text-shadow: 5px 5px 5px #505050; }
+      .servicio .servicio__ul .servicio__ul__li .simple {
+        width: 100%;
+        margin-top: 130px; }
+      .servicio .servicio__ul .servicio__ul__li .superior {
+        width: 100%;
+        margin-top: 10px; }
       .servicio .servicio__ul .servicio__ul__li .info {
         display: none;
         font-size: .9em; }
@@ -339,6 +346,7 @@ main .galeria .galeria__section {
       display: grid;
       grid-template-columns: 63vw;
       grid-template-areas: "ul" "servicioImg";
+      background-color: #e0e0e0;
       position: absolute;
       left: 100%;
       top: 0;

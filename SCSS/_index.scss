@@ -1,10 +1,11 @@
 .index{
     position: relative;
-    h1{
+    background-color: rgba(255, 255, 255, 0.945);
+    h2{
         position: absolute;
-        top: 70vh;
+        top: 80vh;
         left: 10px;
-        color: white;
+        color: rgba(255, 255, 255, 0.945);
         text-transform: uppercase;
         grid-area: img;
     }
@@ -33,11 +34,10 @@
         grid-area: iframe;
     }
     .index__p{
-        font-size: 1.25em;
+        font-size: 1em;
         text-align: justify;
         padding: 3.5em 15px;
-        margin: auto;
-        z-index: 5;
+        margin: 0;
     }
     .index__p--prim{
         @extend .index__p;
@@ -50,18 +50,34 @@
 }
 @media only screen and (min-width: 700px){
     .index{
-        margin-top: 100px;
         display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100vh auto;
             grid-template-areas: 
             "img primerParrafo"
             "segundoParrafo iframe";
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        .index__p{
-            font-size: .9em;
+        h2{
+            font-size: 3em;
+        }
+        .index__p--prim{
+            b{
+                display: block;
+                font-size: 3em;
+            }
+            font-size: 1.2em;
             text-align: justify;
-            padding: 3em ;
-            z-index: 3;
+            background-color: rgba(0, 0, 0, 0.952);
+            color: white;
+            width: 100%;
+            height: 100%;
+            padding: 35% 3.5em;
+        }
+        .index__p--segu{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.849);
+            padding: 3em;
+            font-size: 1.2em;
         }
         .index__div--iframe{
             align-self: center;

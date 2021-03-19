@@ -55,11 +55,11 @@
         <form class="reserva" action="">
             <section class="reserva__section reserva__section--prim">
                 <label for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre">
+                <input class="form-control" type="text" id="nombre" name="nombre" required>
                 <label for="apellido">Apellido:</label>
-                <input class="form-control" type="text" name="apellido">
-                <label for="habitacion">Habitacion</label>
-                <select class="form-control" name="habitacion">
+                <input class="form-control" type="text" id="apellido" name="apellido" required>
+                <label for="habitacion">Habitacion:</label>
+                <select class="form-control" id="habitacion" name="">
                     <option value="1">Simple</option>
                     <option value="2">Superior</option>
                     <option value="3">Superior king</option>
@@ -68,14 +68,14 @@
                 </select>
                 <!-- <legend>Fecha</legend> -->
                 <label for="desde">Desde:</label>
-                <input class="form-control" type="date" name="desde">
+                <input class="form-control" type="date" id="desde" name="desde" required>
                 <label for="hasta">Hasta:</label>
-                <input class="form-control" type="date" name="hasta">
+                <input class="form-control" type="date" id="hasta" name="hasta" required>
                 <!-- <legend>Personas</legend> -->
-                <label for="mayores">Mayores</label>
-                <input class="form-control" type="number" placeholder="Mayores">
-                <label for="menores">Menores</label>
-                <input class="form-control" type="number" placeholder="Menores">
+                <label for="mayores">Mayores:</label>
+                <input class="form-control" type="number" min="0" max="5" id="mayores" required>
+                <label for="menores">Menores:</label>
+                <input class="form-control" type="number" min="0" max="5" id="menores">
             </section>
             <section class="reserva__section reserva__section--secu">
                 <legend class="legendA">Servicios opcionales</legend>

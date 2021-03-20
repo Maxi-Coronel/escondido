@@ -3,6 +3,7 @@ main{
             .galeria__section{
                 display: flex;
                     flex-wrap: wrap;
+                position: relative;
                 margin: 10px 3.8%;
                 div{
                     width: 33%;
@@ -25,7 +26,7 @@ main{
                     }
                 }
                 div:hover .min{
-                    transform: scale(1.3);
+                    transform: scale(2.3);
                     box-shadow: 1px 2px 7px 2px;
                     border: 2px solid black;
                 }

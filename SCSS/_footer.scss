@@ -54,7 +54,7 @@
         padding: .2em .3em;
         margin: 0 auto;
         width: 90%;
-        color: rgba(255, 255, 255, 0.8);
+        color: $colorFondo;
         grid-area: newsletter;
         label{
             color: rgba(255, 255, 255, 0.8);
@@ -81,13 +81,11 @@
             min-width: 30px;
             height: 7vw;
             min-height: 30px;
-            background-image: url("../Multimedia/Imagenes/iconos/enviar.png");
             background-size: contain;
             background-repeat: no-repeat;
             border-radius: 10px;
         }
         .footer__form__button:hover{
-            background-image: url("../Multimedia/Imagenes/iconos/enviar-1.png");
             box-shadow: 0 0 5px .13rem rgb(95, 186, 72);
         }
     }

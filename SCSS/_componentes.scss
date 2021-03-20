@@ -1,16 +1,12 @@
 body{
-    @if $colorVerdeOscuro == #007001 {
-        background: rgb(163, 228, 161);
-    } @else{
-        background: rgba(255, 255, 255, 0.753);
-    }
+    background: $colorFondo;
     .btn{
         margin: 3px;
         justify-content: center;
-        background-color: $colorVerdeClaro;
+        background-color: $colorFondo;
     }
     .btn:hover{
-        background-color: $colorVerdeOscuro;
+        background-color: $colorVerdeClaro;
     }
     .li__a{
         color: #555555 !important;
@@ -28,9 +24,7 @@ header{
     z-index: 6;
     nav{
         color: #555555;
-        background: rgba(255, 255, 255, 0.753);
-        background-size: 10vw, 20vw, 30vw, 40vw;
-        background-position: 38% top, center, right, left;
+        background: $colorFondo;
         box-shadow: 1px 1px 15px 1px $colorSombra;
             ul{
                 display: flex;

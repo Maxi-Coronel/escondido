@@ -1,9 +1,9 @@
 .footer{
     background: rgba(0, 0, 0, 0.863);
-    box-shadow: -1px -2px 5px 1px rgb(80, 80, 80);
     padding: .7em .7em;
     font-size: 1em;
     margin: 0;
+    z-index: 10;
     .footer__ul{
         display: flex;
             justify-content: center;
@@ -41,7 +41,7 @@
                 margin: 2% 0;
                 color: rgba(255, 255, 255, 0.8);
                 a{
-                    color: green;
+                    color: #a2c523;
                     font-size: 1em;
                 }
             }
@@ -73,7 +73,7 @@
             min-height: 30px;
         }
         .form-control:focus{
-            box-shadow: 0 0 5px .13rem rgb(95, 186, 72);
+            box-shadow: 0 0 15px .33em #2e4600;
             color: white;
         }
         .footer__form__button{
@@ -86,7 +86,7 @@
             border-radius: 10px;
         }
         .footer__form__button:hover{
-            box-shadow: 0 0 5px .13rem rgb(95, 186, 72);
+            box-shadow: 0 0 15px .33em #2e4600;
         }
     }
 }

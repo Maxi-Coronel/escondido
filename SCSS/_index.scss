@@ -1,12 +1,14 @@
 .index{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.945);
+    background-color: $colorFondo;
     h2{
+        font-size: 35px;
         position: absolute;
-        top: 80vh;
-        left: 10px;
+        top: 70vh;
+        left: 5px;
         color: rgba(255, 255, 255, 0.945);
         text-transform: uppercase;
+        text-shadow: 3px 3px 3px $colorSombra;
         grid-area: img;
     }
     .index__div--img{
@@ -34,10 +36,12 @@
         grid-area: iframe;
     }
     .index__p{
+        max-width: 540px;
         font-size: 1em;
         text-align: justify;
         padding: 3.5em 15px;
-        margin: 0;
+        margin: auto;
+        color: $colorLetra
     }
     .index__p--prim{
         @extend .index__p;
@@ -48,29 +52,41 @@
         grid-area: segundoParrafo;
     }
 }
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 665px){
+    .index{
+        h2{
+            font-size: 35px;
+            top: 85vh;
+            left: 5px;
+        }
+    }
+}
+@media only screen and (min-width: 1281px){
     .index{
         display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 100vh auto;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto auto;
             grid-template-areas: 
-            "img primerParrafo"
-            "segundoParrafo iframe";
+            "img img img primerParrafo primerParrafo"
+            "segundoParrafo segundoParrafo iframe iframe iframe";
         h2{
             font-size: 3em;
+            top: 65vh;
+        }
+        .index__div--img{
+            height: calc(100vh - 110px);
         }
         .index__p--prim{
             b{
                 display: block;
-                font-size: 3em;
+                font-size: 2.5em;
             }
             font-size: 1.2em;
             text-align: justify;
-            background-color: rgba(0, 0, 0, 0.952);
-            color: white;
             width: 100%;
-            height: 100%;
-            padding: 35% 3.5em;
+            height: auto;
+            padding: 0 3.5em;
+            align-self: center;
         }
         .index__p--segu{
             width: 100%;

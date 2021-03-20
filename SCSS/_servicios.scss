@@ -1,8 +1,9 @@
-.servicio{
+/* .servicio{
     display: grid;
         grid-template-columns: 33%;
     .servicio__ul{
         position: relative;
+        margin: 0 26px 0 0;
         .servicio__ul__li{
             margin: 40px 0;
             h3{
@@ -17,24 +18,27 @@
                 text-shadow: 5px 5px 5px $colorSombra;
             }
             .simple{
-                width: 100%;
-                margin-top: 130px;
+                display: none;
+                width: 110%;
+                margin-top: 170px;
+                z-index: 1;
             }
             .superior{
-                width: 100%;
-                margin-top: 10px;
+                display: none;
+                width: 120%;
+                margin-top: 30px;
             }
             .info{
                 display: none;
                 font-size: .9em;
+                z-index: 2;
                 .info__ul{
                     grid-area: ul;
                     text-align: center;
                     margin: auto 0;
-                    padding: 0;
-                
                     li{
-                    margin: 5px 0;}
+                    margin: 5px 0;
+                    }
                 }
                 .carousel{
                     width: 90%;
@@ -64,10 +68,11 @@
         }
     }
 }
-@media only screen and (min-width: 530px){
+@media only screen and (min-width: 716px){
     .servicio{
             grid-template-columns: 100%;
-        height: 420px;
+        height: calc(100vh - 100px);
+        padding-top: 20px;
         .servicio__ul{
             display: grid;
                 grid-template-columns: repeat(5, 1fr);
@@ -99,9 +104,78 @@
             }
         }
     }
-}
-@media only screen and (min-width: 1023px){
+} */
+/* @media only screen and (min-width: 900px){ */
+main{
+    padding-top: 0px;
     .servicio{
-        height: 38vw;
+        .servicio__ul{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            position: relative;
+            .servicio__ul__li{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                h3{
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    font-size: 1em;
+                    color: white;
+                    text-shadow: 3px 3px 3px $colorSombra;
+                    z-index: 3;
+                }
+                h3:hover{
+                    cursor: pointer;
+                }
+                .info{
+                    display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    transform: rotateY(90deg);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    font-size: 1.5vw;
+                    line-height: 1.6;
+                    background-color: #486b00;
+                    color: #fff;
+                    z-index: 2;
+                    .info__ul{
+                        grid-area: ul;
+                        li{
+                            text-align: center;
+                        }
+                    }
+                    .carousel{
+                        display: none;
+                        width: 90%;
+                        margin: auto;
+                        grid-area: servicioImg;
+                        .carousel-item{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .servicio__ul__li:hover img{
+                transition:all .5s ease-in-out;
+                transform: rotateY(90deg);
+                transform-style: preserve-3d;
+            }
+            .servicio__ul__li:hover .info{
+                transition:.5s .5s ease-in-out;
+                transform: rotateY(0deg);
+            }
+        }
     }
 }

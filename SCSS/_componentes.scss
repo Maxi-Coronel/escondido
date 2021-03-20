@@ -1,4 +1,5 @@
 body{
+    margin-top: 110px;
     background: $colorFondo;
     .btn{
         margin: 3px;
@@ -6,7 +7,7 @@ body{
         background-color: $colorFondo;
     }
     .btn:hover{
-        background-color: $colorVerdeClaro;
+        background-color: #486b00;
     }
     .li__a{
         color: #555555 !important;
@@ -26,29 +27,25 @@ header{
         color: #555555;
         background: $colorFondo;
         box-shadow: 1px 1px 15px 1px $colorSombra;
-            ul{
-                display: flex;
-                list-style: none;
-                li{
-                    flex: 1;
-                    font-size: 1.3em;
-                    text-align: left;
-                    margin-bottom: 7px;
-                }
+        .navbar-brand {
+            width: auto;
+            height: 100px;
+            img{
+            width: 100%;
+            height: auto;
             }
-            .navbar-brand {
-                width: 70%;
-                height: 100px;
-                img{
-                width: 100%;
-                height: auto;
-                }
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                flex: 1;
+                font-size: 1.25em;
+                text-align: left;
+                margin-bottom: 7px;
             }
         }
     }
-.margen{
-    height: 130px;
-    visibility: hidden;
 }
 .imgBoot{
     width: 25vw;
@@ -57,14 +54,4 @@ header{
     min-height: 52px;
     max-width: 200px;
     max-height: 104px;
-}
-@media only screen and (min-width: 640px){
-    nav{
-        display: grid;
-            grid-template-columns: 50% 50%;
-        ul{
-            align-items: flex-end;
-            justify-content: flex-end;
-        }
-    }
 }

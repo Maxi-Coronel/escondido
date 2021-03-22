@@ -55,3 +55,8 @@ header{
     max-width: 200px;
     max-height: 104px;
 }
+@media only screen and (max-height: 400px){
+    header{
+        position: absolute;
+    }
+}

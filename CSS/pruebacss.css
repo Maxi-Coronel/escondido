@@ -253,7 +253,7 @@ main .galeria .galeria__section {
       border: 1px solid black; }
     main .galeria .galeria__section div .max {
       display: block;
-      position: fixed;
+      position: absolute;
       object-fit: cover;
       left: 50%;
       width: 0vw;

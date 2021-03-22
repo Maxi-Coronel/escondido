@@ -4,7 +4,6 @@ main{
                 display: flex;
                     flex-wrap: wrap;
                 position: relative;
-                margin: 10px 3.8%;
                 div{
                     width: 33%;
                     height: 18vw;
@@ -18,17 +17,24 @@ main{
                         display: block;
                         position: fixed;
                         object-fit: cover;
-                        top: 350px;
-                        left: 75%;
+                        left: 50%;
                         width: 0vw;
                         height: 0vw;
-                        transition: all .5s ease;
+                        transition: all 2s ease;
                     }
                 }
                 div:hover .min{
-                    transform: scale(2.3);
                     box-shadow: 1px 2px 7px 2px;
                     border: 2px solid black;
+                }
+                div:hover .max{
+                    width: 49.5%;
+                    height: 27vw;
+                    left: 25%;
+                    transform: translate(0, -22vw);
+                    border: 2px solid black;
+                    box-shadow: 1px 2px 7px 2px;
+                    z-index: 20;
                 }
             }
     }
@@ -64,6 +70,10 @@ main{
                     height: 100%;
                     object-fit: cover;
                 }
+                .max{
+                    top: 350px;
+                    left: 75%;
+                }
                 div:hover .min{
                     width: 0;
                     height: 0;
@@ -71,7 +81,6 @@ main{
                     box-shadow: none;
                 }
                 div:hover .max{
-                    display: block;
                     width: 38vw;
                     height: 25vw;
                     border: 1px solid black;

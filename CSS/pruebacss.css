@@ -242,8 +242,7 @@ header {
 main .galeria .galeria__section {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  margin: 10px 3.8%; }
+  position: relative; }
   main .galeria .galeria__section div {
     width: 33%;
     height: 18vw; }
@@ -256,15 +255,21 @@ main .galeria .galeria__section {
       display: block;
       position: fixed;
       object-fit: cover;
-      top: 350px;
-      left: 75%;
+      left: 50%;
       width: 0vw;
       height: 0vw;
-      transition: all .5s ease; }
+      transition: all 2s ease; }
   main .galeria .galeria__section div:hover .min {
-    transform: scale(2.3);
     box-shadow: 1px 2px 7px 2px;
     border: 2px solid black; }
+  main .galeria .galeria__section div:hover .max {
+    width: 49.5%;
+    height: 27vw;
+    left: 25%;
+    transform: translate(0, -22vw);
+    border: 2px solid black;
+    box-shadow: 1px 2px 7px 2px;
+    z-index: 20; }
 
 @media only screen and (min-width: 426px) {
   main .galeria .galeria__section div {
@@ -287,13 +292,15 @@ main .galeria .galeria__section {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+      main .galeria .galeria__section .max {
+        top: 350px;
+        left: 75%; }
       main .galeria .galeria__section div:hover .min {
         width: 0;
         height: 0;
         border: none;
         box-shadow: none; }
       main .galeria .galeria__section div:hover .max {
-        display: block;
         width: 38vw;
         height: 25vw;
         border: 1px solid black;
@@ -444,7 +451,8 @@ main .servicio .servicio__ul {
       line-height: 1.6;
       background-color: #486b00;
       color: #fff;
-      z-index: 2; }
+      z-index: 2;
+      text-transform: uppercase; }
       main .servicio .servicio__ul .servicio__ul__li .info .info__ul {
         grid-area: ul; }
         main .servicio .servicio__ul .servicio__ul__li .info .info__ul li {

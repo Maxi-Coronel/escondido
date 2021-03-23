@@ -34,7 +34,7 @@
                 margin: auto;
                 font-size: 4vw;
                 line-height: 1.6;
-                background-color: #486b00;
+                background-color: $colorSecundario;
                 color: #fff;
                 z-index: 2;
                 text-transform: uppercase;
@@ -42,19 +42,6 @@
                     grid-area: ul;
                     li{
                         text-align: center;
-                    }
-                }
-                .carousel{
-                    display: none;
-                    width: 90%;
-                    margin: auto;
-                    grid-area: servicioImg;
-                    .carousel-item{
-                        width: 100%;
-                        img{
-                            width: 100%;
-                            height: auto;
-                        }
                     }
                 }
             }

@@ -16,16 +16,21 @@
         }
     }
     .reserva__section--prim{
-        border-bottom: 3px dashed $colorVerdeOscuro;
+        border-bottom: 3px dashed $colorTerciario;
         label{
             display: inline-block;
             width: 26%;
+            align-self: center;
+        }
+        label:hover{
+            cursor: pointer;
         }
         .form-control{
             width: 68%;
             height: 2.2em;
             margin: 4px 0;
-            color: $colorVerdeOscuro;
+            color: $colorTerciario;
+            background-color: $colorClaro;
         }
         select{
             width: 68%;
@@ -33,8 +38,8 @@
             margin: 4px 0;
         }
         .form-control:focus{
-            box-shadow: 0 0 5px .25rem rgb(95, 186, 72);
-            color: $colorVerdeOscuro;
+            box-shadow: 0 0 10px .1rem $colorSecundario;
+            color: $colorTerciario;
         }
     }
     .reserva__section--secu{
@@ -48,7 +53,7 @@
         }
     }
     .reserva__section--terc{
-        border-bottom: 3px dashed $colorVerdeOscuro;
+        border-bottom: 3px dashed $colorTerciario;
         label{
             width: 30%;
             justify-self: center;
@@ -81,7 +86,7 @@
         .reserva__section--prim{
             grid-area: reservaA;
             width: 100%;
-            border-right: 3px dashed $colorVerdeOscuro;            
+            border-right: 3px dashed $colorTerciario;            
         }
         .reserva__section--secu{
             grid-area: reservaB;
@@ -116,7 +121,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
-            border-left: 3px dashed $colorVerdeOscuro;
+            border-left: 3px dashed $colorTerciario;
             input{
                 font-size: 1em;
                 width: 170px;

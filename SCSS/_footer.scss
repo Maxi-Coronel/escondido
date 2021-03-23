@@ -41,7 +41,7 @@
                 margin: 2% 0;
                 color: rgba(255, 255, 255, 0.8);
                 a{
-                    color: #a2c523;
+                    color: $colorDetalles;
                     font-size: 1em;
                 }
             }
@@ -54,7 +54,7 @@
         padding: .2em .3em;
         margin: 0 auto;
         width: 90%;
-        color: $colorFondo;
+        color: $colorClaro;
         grid-area: newsletter;
         label{
             color: rgba(255, 255, 255, 0.8);
@@ -66,15 +66,15 @@
         }
         .form-control{
             background: rgba(255, 255, 255, 0.8);
-            color: white;
+            color: $colorTerciario;
             width: 70%;
             margin-right: 10px;
             height: 3.7vw;
             min-height: 30px;
         }
         .form-control:focus{
-            box-shadow: 0 0 15px .33em #2e4600;
-            color: white;
+            box-shadow: 0 0 15px .05rem $colorPrincipal;
+            color: $colorTerciario;
         }
         .footer__form__button{
             width: 7vw;
@@ -86,7 +86,7 @@
             border-radius: 10px;
         }
         .footer__form__button:hover{
-            box-shadow: 0 0 15px .33em #2e4600;
+            box-shadow: 0 0 15px .05rem $colorPrincipal;
         }
     }
 }

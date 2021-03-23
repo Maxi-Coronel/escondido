@@ -27,11 +27,11 @@
             height: 2.2em;
             margin: 5px 0;
             background: rgb(226, 226, 226);
-            color: $colorVerdeOscuro;
+            color: $colorTerciario;
         }
         .form-control:focus{
-            box-shadow: 0 0 5px .25rem rgb(95, 186, 72);
-            color: $colorVerdeOscuro;
+            box-shadow: 0 0 10px .1rem $colorSecundario;
+            color: $colorTerciario;
         }
         div{
             width: $anchoMax;

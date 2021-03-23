@@ -1,13 +1,18 @@
 body{
     margin-top: 86px;
-    background: $colorFondo;
+    background: $colorPrincipal;
     .btn{
         margin: 3px;
         justify-content: center;
-        background-color: $colorFondo;
+        background-color: $colorPrincipal;
+        border: 1px solid $colorTerciario;
+        color: $colorTerciario;
     }
     .btn:hover{
-        background-color: #486b00;
+        background-color: $colorTerciario;
+        border: 1px solid $colorDetalles;
+        color: $colorDetalles;
+        font-weight: bold;
     }
     .li__a{
         color: #555555 !important;
@@ -23,14 +28,14 @@ header{
     top: 0;
     left: 0;
     z-index: 6;
-    nav{
+    .navbar{
         color: #555555;
-        background: $colorFondo;
+        background: $colorPrincipal;
         box-shadow: 1px 1px 15px 1px $colorSombra;
         .navbar-brand {
             width: auto;
             height: 70px;
-            img{
+            .imgBoot{
             width: 140px;
             height: auto;
             }
@@ -46,14 +51,6 @@ header{
             }
         }
     }
-}
-.imgBoot{
-    width: 25vw;
-    height: 13vw;
-    min-width: 100px;
-    min-height: 52px;
-    max-width: 200px;
-    max-height: 104px;
 }
 @media only screen and (max-height: 450px){
     body{

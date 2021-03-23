@@ -1,5 +1,5 @@
 body{
-    margin-top: 117px;
+    margin-top: 86px;
     background: $colorFondo;
     .btn{
         margin: 3px;
@@ -29,9 +29,9 @@ header{
         box-shadow: 1px 1px 15px 1px $colorSombra;
         .navbar-brand {
             width: auto;
-            height: 100px;
+            height: 70px;
             img{
-            width: 100%;
+            width: 140px;
             height: auto;
             }
         }
@@ -55,8 +55,19 @@ header{
     max-width: 200px;
     max-height: 104px;
 }
-@media only screen and (max-height: 400px){
+@media only screen and (max-height: 450px){
+    body{
+        margin-top: 76px;
+    }
     header{
         position: absolute;
+        nav{
+            .navbar-brand{
+                height: 60px;
+                img{
+                width: 100px;
+                }
+            }
+        }
     }
 }

@@ -3,7 +3,7 @@
     .index__div--img{
         position: relative;
         width: 100%;
-        height: calc( 100vh - 110px );
+        height: calc( 100vh - 86px );
         grid-area: img;
         img{
             width: 100%;
@@ -102,6 +102,13 @@
         }
         .index__div--iframe{
             align-self: center;
+        }
+    }
+}
+@media only screen and (max-height: 450px){
+    .index{
+        .index__div--img{
+            height: calc( 100vh - 76px );
         }
     }
 }

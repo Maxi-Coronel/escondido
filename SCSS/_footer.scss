@@ -1,6 +1,6 @@
 .footer{
     background: rgba(0, 0, 0, 0.863);
-    padding: .7em .7em;
+    padding: 0 .7em .7em;
     font-size: 1em;
     margin: 0;
     z-index: 10;
@@ -10,9 +10,9 @@
         margin: .7em 0;
         grid-area: red_social;
         li{
-            margin: 0 15px;
+            margin: 15px;
             img{
-                width: 3em;
+                width: 2.5em;
             }
         }
     }
@@ -93,14 +93,27 @@
 @media only screen and (min-width: 600px){
     .footer{
         display: grid;
+        grid-template-rows: auto;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: 
             "titulo red_social"
             "address newsletter"
             "address copy";
+            .footer__ul{
+                display: flex;
+                    justify-content: center;
+                margin: .7em 0;
+                grid-area: red_social;
+                li{
+                    margin: 15px 30px;
+                    img{
+                        width: 2.5em;
+                    }
+                }
+            }
         .footer__p{
             font-size: 1.5em;
-            margin: .5em 0 0 0;
+            margin: auto 0;
         }
         .footer__p--copy{
             font-size: 12px;

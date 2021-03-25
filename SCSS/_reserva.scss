@@ -1,3 +1,12 @@
+.carousel-inner{
+    h5{
+        text-transform: uppercase;
+        text-shadow: 2px 1px 1px $colorSecundario;
+    }
+    p{
+        text-shadow: 2px 1px 1px $colorSecundario;
+    }
+}
 .reserva{
     padding: 1em 0;
     margin: 0 5px;

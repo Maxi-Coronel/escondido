@@ -73,7 +73,7 @@ header {
 
 .footer {
   background: rgba(0, 0, 0, 0.863);
-  padding: .7em .7em;
+  padding: 0 .7em .7em;
   font-size: 1em;
   margin: 0;
   z-index: 10; }
@@ -83,9 +83,9 @@ header {
     margin: .7em 0;
     grid-area: red_social; }
     .footer .footer__ul li {
-      margin: 0 15px; }
+      margin: 15px; }
       .footer .footer__ul li img {
-        width: 3em; }
+        width: 2.5em; }
   .footer .footer__p {
     font-size: large;
     text-align: center;
@@ -151,11 +151,21 @@ header {
 @media only screen and (min-width: 600px) {
   .footer {
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "titulo red_social" "address newsletter" "address copy"; }
+    .footer .footer__ul {
+      display: flex;
+      justify-content: center;
+      margin: .7em 0;
+      grid-area: red_social; }
+      .footer .footer__ul li {
+        margin: 15px 30px; }
+        .footer .footer__ul li img {
+          width: 2.5em; }
     .footer .footer__p {
       font-size: 1.5em;
-      margin: .5em 0 0 0; }
+      margin: auto 0; }
     .footer .footer__p--copy {
       font-size: 12px; }
     .footer .footer__form label {
@@ -448,6 +458,13 @@ main .galeria .galeria__section {
       font-size: 1.5em; }
       .servicio .servicio__ul .suite .info {
         font-size: 2vw; } }
+
+.carousel-inner h5 {
+  text-transform: uppercase;
+  text-shadow: 2px 1px 1px #1a2930; }
+
+.carousel-inner p {
+  text-shadow: 2px 1px 1px #1a2930; }
 
 .reserva {
   padding: 1em 0;

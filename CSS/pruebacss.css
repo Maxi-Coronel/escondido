@@ -63,7 +63,7 @@ header {
 
 @media only screen and (max-height: 450px) {
   body {
-    margin-top: 76px; }
+    margin-top: 86px; }
   header {
     position: absolute; }
     header nav .navbar-brand {
@@ -397,7 +397,7 @@ main .galeria .galeria__section {
     transition: all .5s ease-in-out;
     transform: rotateY(90deg); }
 
-@media only screen and (min-width: 470px) {
+@media only screen and (min-width: 750px) {
   .accordion {
     display: none; }
   .servicio {

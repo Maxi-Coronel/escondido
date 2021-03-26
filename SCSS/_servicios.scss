@@ -1,4 +1,10 @@
+.accordion{
+    img{
+        width: 100%;
+    }
+}
 .servicio{
+    display: none;
     .servicio__ul{
         display: flex;
             flex-wrap: wrap;
@@ -66,8 +72,12 @@
         transform: rotateY(90deg);
     }}
 }
-@media only screen and (min-width: 464px){
+@media only screen and (min-width: 470px){
+    .accordion{
+        display: none;
+    }
     .servicio{
+        display: block;
         .servicio__ul{
             display: grid;
                 grid-template-columns: repeat(4, 1fr);

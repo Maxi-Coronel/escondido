@@ -219,11 +219,11 @@ header {
     grid-area: segundoParrafo; }
 
 @media only screen and (min-width: 354px) {
-  .index h2 {
+  .index .index__div--img h2 {
     font-size: 2.5em; } }
 
 @media only screen and (min-width: 665px) {
-  .index h2 {
+  .index .index__div--img h2 {
     font-size: 3em; } }
 
 @media only screen and (min-width: 1281px) {
@@ -232,11 +232,10 @@ header {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas: "img img img primerParrafo primerParrafo" "segundoParrafo segundoParrafo iframe iframe iframe"; }
-    .index h2 {
-      font-size: 3em;
-      top: 78vh; }
     .index .index__div--img {
       height: calc(100vh - 86px); }
+      .index .index__div--img h2 {
+        top: 68vh; }
     .index .index__p--prim {
       font-size: 1.2em;
       text-align: justify;
@@ -249,7 +248,6 @@ header {
         font-size: 2.5em; }
     .index .index__p--segu {
       width: 100%;
-      height: 100%;
       padding: 3em;
       font-size: 1.2em; }
     .index .index__div--iframe {
@@ -459,12 +457,16 @@ main .galeria .galeria__section {
       .servicio .servicio__ul .suite .info {
         font-size: 2vw; } }
 
-.carousel-inner h5 {
-  text-transform: uppercase;
-  text-shadow: 2px 1px 1px #1a2930; }
-
-.carousel-inner p {
-  text-shadow: 2px 1px 1px #1a2930; }
+.carousel .carousel-caption {
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.37); }
+  .carousel .carousel-caption h5 {
+    text-transform: uppercase;
+    text-shadow: 2px 1px 1px #1a2930; }
+  .carousel .carousel-caption p {
+    text-shadow: 2px 1px 1px #1a2930; }
 
 .reserva {
   padding: 1em 0;

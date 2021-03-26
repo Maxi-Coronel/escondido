@@ -1,10 +1,16 @@
-.carousel-inner{
-    h5{
-        text-transform: uppercase;
-        text-shadow: 2px 1px 1px $colorSecundario;
-    }
-    p{
-        text-shadow: 2px 1px 1px $colorSecundario;
+.carousel{
+    .carousel-caption{
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.37);
+        h5{
+            text-transform: uppercase;
+            text-shadow: 2px 1px 1px $colorSecundario;
+        }
+        p{
+            text-shadow: 2px 1px 1px $colorSecundario;
+        }
     }
 }
 .reserva{

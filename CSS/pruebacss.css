@@ -376,8 +376,7 @@ main .galeria .galeria__section {
         line-height: 1.6;
         background-color: #1a2930;
         color: #fff;
-        z-index: 2;
-        text-transform: uppercase; }
+        z-index: 2; }
         .servicio .servicio__ul .servicio__ul__li .info .info__ul {
           grid-area: ul; }
           .servicio .servicio__ul .servicio__ul__li .info .info__ul li {

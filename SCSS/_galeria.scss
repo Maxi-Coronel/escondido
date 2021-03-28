@@ -1,105 +1,99 @@
-main{
-    .galeria{
-            .galeria__section{
-                display: flex;
-                    flex-wrap: wrap;
-                position: relative;
-                div{
-                    width: 33%;
-                    height: 18vw;
-                    .min{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border: 1px solid black;
-                    }
-                    .max{
-                        display: block;
-                        position: absolute;
-                        object-fit: cover;
-                        left: 50%;
-                        width: 0vw;
-                        height: 0vw;
-                        transition: all .5s ease;
-                    }
-                }
-                div:hover .min{
-                    box-shadow: 1px 2px 7px 2px;
-                    border: 2px solid black;
-                }
-                div:hover .max{
-                    width: 49.5%;
-                    height: 27vw;
-                    left: 25%;
-                    transform: translate(0, -22vw);
-                    border: 2px solid black;
-                    box-shadow: 1px 2px 7px 2px;
-                    z-index: 20;
-                }
+.galeria{
+    .galeria__section{
+        display: flex;
+            flex-wrap: wrap;
+        position: relative;
+        div{
+            width: 33%;
+            height: 18vw;
+            .min{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1px solid black;
             }
+            .max{
+                display: block;
+                position: absolute;
+                object-fit: cover;
+                left: 50%;
+                width: 0vw;
+                height: 0vw;
+                transition: all .5s ease;
+            }
+        }
+        div:hover .min{
+            box-shadow: 1px 2px 7px 2px;
+            border: 2px solid black;
+        }
+        div:hover .max{
+            width: 49.5%;
+            height: 27vw;
+            left: 25%;
+            transform: translate(0, -22vw);
+            border: 2px solid black;
+            box-shadow: 1px 2px 7px 2px;
+            z-index: 20;
+        }
     }
 }
 @media only screen and (min-width: 426px){
-    main{
-        .galeria{
-                .galeria__section{
-                    div{
-                        width: 25%;
-                        height: 12vw;
-                    }
-                    div:hover .max{
-                        width: 40%;
-                        height: 21.81vw;
-                        left: 30%;
-                        transform: translate(0, -17vw);
-                        border: 2px solid black;
-                        box-shadow: 1px 2px 7px 2px;
-                        z-index: 20;
-                    }
-                }
+    .galeria{
+        .galeria__section{
+            div{
+                width: 25%;
+                height: 12vw;
+            }
+            div:hover .max{
+                width: 40%;
+                height: 21.81vw;
+                left: 30%;
+                transform: translate(0, -17vw);
+                border: 2px solid black;
+                box-shadow: 1px 2px 7px 2px;
+                z-index: 20;
+            }
         }
     }
 }
 @media only screen and (min-width: 1150px){
-    main{
-        .galeria{
-            display: grid;
-                grid-template-columns: 50%;
-            position: relative;
-            .galeria__section{
-                display: flex;
-                    flex-wrap: wrap;
-                position: static;
-                div{
-                    width: 25%;
-                    height: 7vw;
-                    .min{
-                        transition: all .3s ease-out;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                    .max{
-                        top: 180px;
-                        left: 75%;
-                    }
+    .galeria{
+        display: grid;
+            grid-template-columns: 50%;
+        position: relative;
+        .galeria__section{
+            display: flex;
+                flex-wrap: wrap;
+            position: static;
+            div{
+                width: 25%;
+                height: 7vw;
+                .min{
+                    transition: all .3s ease-out;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
-                div:hover .min{
-                    width: 0;
-                    height: 0;
-                    border: none;
-                    box-shadow: none;
-                }
-                div:hover .max{
-                    position: fixed;
-                    width: 38vw;
-                    height: 25vw;
-                    border: 1px solid black;
+                .max{
                     top: 180px;
-                    left: 57%;
-                    box-shadow: 2px 7px 15px;
-                    transform: translate(0, 0);
+                    left: 75%;
                 }
+            }
+            div:hover .min{
+                width: 0;
+                height: 0;
+                border: none;
+                box-shadow: none;
+            }
+            div:hover .max{
+                position: fixed;
+                width: 38vw;
+                height: 25vw;
+                border: 1px solid black;
+                top: 180px;
+                left: 57%;
+                box-shadow: 2px 7px 15px;
+                transform: translate(0, 0);
             }
         }
     }

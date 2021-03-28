@@ -15,10 +15,10 @@ body{
         font-weight: bold;
     }
     .li__a{
-        color: #555555 !important;
+        color: $colorLetra !important;
     }
     .li__a:visited{
-        color: #555555 !important;
+        color: $colorLetra !important;
     }
 }
 /* Nav */
@@ -29,7 +29,7 @@ header{
     left: 0;
     z-index: 6;
     .navbar{
-        color: #555555;
+        color: $colorLetra;
         background: $colorPrincipal;
         box-shadow: 1px 1px 15px 1px $colorSombra;
         .navbar-brand {

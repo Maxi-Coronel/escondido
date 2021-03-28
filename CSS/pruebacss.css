@@ -36,9 +36,9 @@ body {
     color: #f7ce3e;
     font-weight: bold; }
   body .li__a {
-    color: #555555 !important; }
+    color: #555 !important; }
   body .li__a:visited {
-    color: #555555 !important; }
+    color: #555 !important; }
 
 /* Nav */
 header {
@@ -48,7 +48,7 @@ header {
   left: 0;
   z-index: 6; }
   header .navbar {
-    color: #555555;
+    color: #555;
     background: #c5c1c0;
     box-shadow: 1px 1px 15px 1px #505050; }
     header .navbar .navbar-brand {
@@ -78,7 +78,7 @@ header {
 
 .footer {
   background: rgba(0, 0, 0, 0.863);
-  padding: 0 .7em .7em;
+  padding: .5em .7em .7em;
   font-size: 1em;
   margin: 0;
   z-index: 10; }
@@ -262,19 +262,19 @@ header {
   .index .index__div--img {
     height: calc( 100vh - 76px); } }
 
-main .galeria .galeria__section {
+.galeria .galeria__section {
   display: flex;
   flex-wrap: wrap;
   position: relative; }
-  main .galeria .galeria__section div {
+  .galeria .galeria__section div {
     width: 33%;
     height: 18vw; }
-    main .galeria .galeria__section div .min {
+    .galeria .galeria__section div .min {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border: 1px solid black; }
-    main .galeria .galeria__section div .max {
+    .galeria .galeria__section div .max {
       display: block;
       position: absolute;
       object-fit: cover;
@@ -282,10 +282,10 @@ main .galeria .galeria__section {
       width: 0vw;
       height: 0vw;
       transition: all .5s ease; }
-  main .galeria .galeria__section div:hover .min {
+  .galeria .galeria__section div:hover .min {
     box-shadow: 1px 2px 7px 2px;
     border: 2px solid black; }
-  main .galeria .galeria__section div:hover .max {
+  .galeria .galeria__section div:hover .max {
     width: 49.5%;
     height: 27vw;
     left: 25%;
@@ -295,10 +295,10 @@ main .galeria .galeria__section {
     z-index: 20; }
 
 @media only screen and (min-width: 426px) {
-  main .galeria .galeria__section div {
+  .galeria .galeria__section div {
     width: 25%;
     height: 12vw; }
-  main .galeria .galeria__section div:hover .max {
+  .galeria .galeria__section div:hover .max {
     width: 40%;
     height: 21.81vw;
     left: 30%;
@@ -308,31 +308,31 @@ main .galeria .galeria__section {
     z-index: 20; } }
 
 @media only screen and (min-width: 1150px) {
-  main .galeria {
+  .galeria {
     display: grid;
     grid-template-columns: 50%;
     position: relative; }
-    main .galeria .galeria__section {
+    .galeria .galeria__section {
       display: flex;
       flex-wrap: wrap;
       position: static; }
-      main .galeria .galeria__section div {
+      .galeria .galeria__section div {
         width: 25%;
         height: 7vw; }
-        main .galeria .galeria__section div .min {
+        .galeria .galeria__section div .min {
           transition: all .3s ease-out;
           width: 100%;
           height: 100%;
           object-fit: cover; }
-        main .galeria .galeria__section div .max {
+        .galeria .galeria__section div .max {
           top: 180px;
           left: 75%; }
-      main .galeria .galeria__section div:hover .min {
+      .galeria .galeria__section div:hover .min {
         width: 0;
         height: 0;
         border: none;
         box-shadow: none; }
-      main .galeria .galeria__section div:hover .max {
+      .galeria .galeria__section div:hover .max {
         position: fixed;
         width: 38vw;
         height: 25vw;

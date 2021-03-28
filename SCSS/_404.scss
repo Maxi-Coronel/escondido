@@ -1,7 +1,7 @@
 .error{
     display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
         grid-template-areas:
         "titulo img"
         "sub1 img"
@@ -20,6 +20,7 @@
         grid-area: sub2;
     }
     .error__img{
-        grid-area: img
+        grid-area: img;
+        margin: 0 0 0 auto;
     }
 }

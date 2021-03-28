@@ -82,20 +82,13 @@
         }
     }
     .reserva__section--cuar{
-        div{
+        div, a{
+            display: flex;
+                justify-content: center;
             width: 50%;
             input{
                 font-size: .75em;
-                margin: 10px 25%;
-                width: ($anchoMax)-6%;
-                max-width: 115px;
-            }
-        }
-        a{
-            width: 50%;
-            input{
-                font-size: .75em;
-                margin: 10px 25%;
+                margin: 10px 0;
                 width: ($anchoMax)-6%;
                 max-width: 115px;
             }
@@ -117,12 +110,12 @@
 }
 .overlay { 
     position: fixed;
-    top: 86px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
-    transition: opacity 1s;
+    transition: opacity .5s;
     visibility: hidden;
     opacity: 0;
   }
@@ -135,16 +128,16 @@
     width: 46%;
     padding: 2%;
     border-radius: 15px;
-    box-shadow: 0 0 5px #CCC;
-    background: #FFF;
+    box-shadow: 0 0 5px $colorPrincipal;
+    background: $colorPrincipal;
     position: relative;
     margin: 20% auto;
     transition: all 5s ease-in-out;
 }
 #cerrar{
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 0;
+    right: 10px;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -172,10 +165,13 @@
         }
         .reserva__section--cuar{
             grid-area: reservaD;
-            input{
-                font-size: 1.2em;
-                width: 20%;
-                max-width: none;
+            div, a{
+                display: flex;
+                    align-items: center;
+                input{
+                    font-size: 1.2em;
+                    max-width: 180px;
+                }
             }
         }
     }
@@ -197,10 +193,16 @@
                 align-items: center;
                 justify-content: space-around;
             border-left: 3px dashed $colorTerciario;
-            input{
-                font-size: 1em;
-                width: 170px;
-                max-width: none;
+            div, a{
+                display: flex;
+                align-items: center;
+                width: 95%;
+                input{
+                    margin: 0 auto;
+                    font-size: 1em;
+                    width: 170px;
+                    max-width: none;
+                }
             }
         }
     }

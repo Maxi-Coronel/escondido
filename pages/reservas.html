@@ -130,11 +130,20 @@
                 <label><input type="radio" name="colchon" id="resorte" value="resorte">Resorte</label>
             </section>
             <section class="reserva__section reserva__section--cuar">
-                <input class="btn btn-outline-success contactoBtn" type="reset" value="Borrar">
-                <input class="btn btn-outline-success contactoBtn" type="submit" value="Reservar">
-                <input class="btn btn-outline-success contactoBtn" type="submit" value="Cotizar">
+                <div><input class="btn btn-outline-success contactoBtn reset" type="reset" value="Borrar"></div>
+                <a href="#popup"><input class="btn btn-outline-success contactoBtn anim" type="button" value="Reservar"></a>
             </section>
         </form>
+        <div id="popup" class="overlay">
+            <div id="popupBody">
+                <h3>Reserva realizada</h3>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <p>Aquí te haremos vivir momontos únicos e inolvidables</p>
+                </div>
+                <a href="../index.html"><input class="btn btn-outline-success contactoBtn" type="button" value="Volver a inicio"></a>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <p class="footer__p" data-aos="fade-right"><b>Hotel El Escondido</b></p>

@@ -82,13 +82,74 @@
         }
     }
     .reserva__section--cuar{
-        input{
-            font-size: .75em;
-            margin: 10px 1.5%;
-            width: ($anchoMax/3)-6%;
-            max-width: 115px;
+        div{
+            width: 50%;
+            input{
+                font-size: .75em;
+                margin: 10px 25%;
+                width: ($anchoMax)-6%;
+                max-width: 115px;
+            }
+        }
+        a{
+            width: 50%;
+            input{
+                font-size: .75em;
+                margin: 10px 25%;
+                width: ($anchoMax)-6%;
+                max-width: 115px;
+            }
+        }
+        .anim{
+            animation-name: anim;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .anim:hover{
+            animation-name: none;
         }
     }
+}
+@keyframes anim{
+    0% {background-color: $colorPrincipal;}
+   50% {background-color: $colorTerciario; color: $colorDetalles; border: 1px solid $colorDetalles;}
+  100% {background-color: $colorPrincipal;}
+}
+.overlay { 
+    position: fixed;
+    top: 86px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+  }
+  #popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    margin: 20% auto;
+    transition: all 5s ease-in-out;
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
 }
 @media only screen and (min-width: 640px){
     .reserva{
@@ -132,10 +193,9 @@
             border-bottom: 0;
         }
         .reserva__section--cuar{
-            display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-around;
             border-left: 3px dashed $colorTerciario;
             input{
                 font-size: 1em;
@@ -144,7 +204,4 @@
             }
         }
     }
-}
-@media only screen and (max-height: 450px){
-    
 }

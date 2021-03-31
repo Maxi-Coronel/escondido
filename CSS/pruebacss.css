@@ -55,6 +55,7 @@ header {
       width: auto;
       height: 70px; }
       header .navbar .navbar-brand .imgBoot {
+        margin: 0 60px;
         width: 140px;
         height: auto; }
     header .navbar ul {
@@ -193,12 +194,13 @@ header {
     .index .index__div--img h2 {
       position: absolute;
       bottom: 20px;
-      left: 5px;
       font-size: 2em;
-      padding: 0 10px;
+      padding: 0 15px;
+      margin: auto;
       color: white;
       text-transform: uppercase;
-      text-shadow: 3px 3px 3px #1a2930; }
+      text-shadow: 3px 3px 3px #1a2930;
+      text-align: center; }
   .index .index__div--iframe {
     position: relative;
     padding-bottom: 53.85%;
@@ -215,7 +217,7 @@ header {
     max-width: 540px;
     font-size: 1em;
     text-align: justify;
-    padding: 3.5em 15px;
+    padding: 3.6em 15px;
     margin: auto;
     color: #555; }
   .index .index__p--prim {
@@ -229,6 +231,7 @@ header {
 
 @media only screen and (min-width: 665px) {
   .index .index__div--img h2 {
+    margin: 50px;
     font-size: 3em; } }
 
 @media only screen and (min-width: 1260px) {
@@ -311,7 +314,8 @@ header {
   .galeria {
     display: grid;
     grid-template-columns: 50%;
-    position: relative; }
+    position: relative;
+    margin-left: 50px; }
     .galeria .galeria__section {
       display: flex;
       flex-wrap: wrap;
@@ -473,9 +477,11 @@ header {
   background-color: rgba(0, 0, 0, 0.37); }
   .carousel .carousel-caption h5 {
     text-transform: uppercase;
-    text-shadow: 2px 1px 1px #1a2930; }
+    text-shadow: 2px 1px 1px #1a2930;
+    font-size: 2em; }
   .carousel .carousel-caption p {
-    text-shadow: 2px 1px 1px #1a2930; }
+    text-shadow: 2px 1px 1px #1a2930;
+    font-size: 2em; }
 
 .reserva {
   padding: 1em 0;
@@ -483,9 +489,8 @@ header {
   .reserva .reserva__section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: .2em .3em;
-    margin: 0 5px; }
+    margin: 0 .4em; }
     .reserva .reserva__section legend {
       width: 100%;
       text-align: center;
@@ -515,21 +520,18 @@ header {
       color: #0a1612; }
   .reserva .reserva__section--secu label {
     width: 43%;
-    margin: 3px auto;
+    margin: 3px 10px;
     cursor: pointer; }
   .reserva .reserva__section--secu input {
     margin-right: 10px; }
   .reserva .reserva__section--terc {
     border-bottom: 3px dashed #0a1612; }
     .reserva .reserva__section--terc label {
-      width: 30%;
-      justify-self: center;
-      align-self: center;
-      text-align: center;
-      margin: 3px auto;
+      width: 43%;
+      margin: 3px 10px;
       cursor: pointer; }
     .reserva .reserva__section--terc input {
-      margin: 2%; }
+      margin-right: 10px; }
   .reserva .reserva__section--cuar div, .reserva .reserva__section--cuar a {
     display: flex;
     justify-content: center;
@@ -596,7 +598,8 @@ header {
   .reserva {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "reservaA reservaB" "reservaA reservaC" "reservaD reservaD"; }
+    grid-template-areas: "reservaA reservaB" "reservaA reservaC" "reservaD reservaD";
+    margin: 0 50px; }
     .reserva .reserva__section--prim {
       grid-area: reservaA;
       width: 100%;
@@ -638,8 +641,7 @@ header {
           max-width: none; } }
 
 .contacto {
-  padding-top: 20px;
-  margin: 15px; }
+  padding-top: 20px; }
   .contacto .contacto__add address {
     width: 100%; }
   .contacto .contacto__add ul {
@@ -649,7 +651,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     padding: .2em .3em;
-    margin: 0 10px; }
+    margin: 20px 10px; }
     .contacto .contacto__form label {
       align-self: center;
       text-align: center;
@@ -670,15 +672,14 @@ header {
       text-align: center; }
   .contacto .contacto__ubic {
     grid-area: ubicacion;
-    margin: 8px 0; }
+    margin: 0; }
     .contacto .contacto__ubic iframe {
-      width: 95%;
-      margin: 4px 2.5%; }
+      width: 100%; }
 
 @media only screen and (min-width: 640px) {
   .contacto {
     display: grid;
-    grid-template-columns: 33% 66%;
+    grid-template-columns: 34% 66%;
     grid-template-rows: auto;
     grid-template-areas: "address contactoForm" "ubicacion ubicacion"; }
     .contacto .contacto__add {

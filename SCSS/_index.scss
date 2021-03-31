@@ -13,12 +13,13 @@
         h2{
             position: absolute;
             bottom: 20px;
-            left: 5px;
             font-size: 2em;
-            padding: 0 10px;
+            padding: 0 15px;
+            margin: auto;
             color: white;
             text-transform: uppercase;
             text-shadow: 3px 3px 3px $colorSecundario;
+            text-align: center;
         }
     }
     .index__div--iframe{
@@ -39,7 +40,7 @@
         max-width: 540px;
         font-size: 1em;
         text-align: justify;
-        padding: 3.5em 15px;
+        padding: 3.6em 15px;
         margin: auto;
         color: $colorLetra
     }
@@ -65,6 +66,7 @@
     .index{
         .index__div--img{
             h2{
+                margin: 50px;
                 font-size: 3em;
             }
         }

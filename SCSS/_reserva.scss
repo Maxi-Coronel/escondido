@@ -7,9 +7,11 @@
         h5{
             text-transform: uppercase;
             text-shadow: 2px 1px 1px $colorSecundario;
+            font-size: 2em;
         }
         p{
             text-shadow: 2px 1px 1px $colorSecundario;
+            font-size: 2em;
         }
     }
 }
@@ -19,9 +21,8 @@
     .reserva__section{
         display: flex;
             flex-wrap: wrap;
-            justify-content: center;
         padding: .2em .3em;
-        margin: 0 5px;
+        margin: 0 .4em;
         legend{
             width: 100%;
             text-align: center;
@@ -60,7 +61,7 @@
     .reserva__section--secu{
         label{
             width: 43%;
-            margin: 3px auto;
+            margin: 3px 10px;
             cursor: pointer;
         }
         input{
@@ -70,15 +71,12 @@
     .reserva__section--terc{
         border-bottom: 3px dashed $colorTerciario;
         label{
-            width: 30%;
-            justify-self: center;
-            align-self: center;
-            text-align: center;
-            margin: 3px auto;
+            width: 43%;
+            margin: 3px 10px;
             cursor: pointer;
         }
         input{
-            margin: 2%;
+            margin-right: 10px;
         }
     }
     .reserva__section--cuar{
@@ -152,6 +150,7 @@
             "reservaA reservaB"
             "reservaA reservaC"
             "reservaD reservaD";
+            margin: 0 50px;
         .reserva__section--prim{
             grid-area: reservaA;
             width: 100%;

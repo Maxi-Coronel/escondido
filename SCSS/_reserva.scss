@@ -26,7 +26,7 @@
         legend{
             width: 100%;
             text-align: center;
-            margin: 0 0 10px 0;
+            margin: 5px 0;
             font-size: 1.3em;
             line-height: 1.5em;
         }
@@ -61,22 +61,22 @@
     .reserva__section--secu{
         label{
             width: 43%;
-            margin: 3px 10px;
+            margin: 3px 0 3px auto;
             cursor: pointer;
-        }
-        input{
-            margin-right: 10px;
+            input{
+                margin-right: 10px;
+            }
         }
     }
     .reserva__section--terc{
         border-bottom: 3px dashed $colorTerciario;
         label{
             width: 43%;
-            margin: 3px 10px;
+            margin: 3px 0 3px auto;
             cursor: pointer;
-        }
-        input{
-            margin-right: 10px;
+            input{
+                margin-right: 10px;
+            }
         }
     }
     .reserva__section--cuar{

@@ -494,7 +494,7 @@ header {
     .reserva .reserva__section legend {
       width: 100%;
       text-align: center;
-      margin: 0 0 10px 0;
+      margin: 5px 0;
       font-size: 1.3em;
       line-height: 1.5em; }
   .reserva .reserva__section--prim {
@@ -520,18 +520,18 @@ header {
       color: #0a1612; }
   .reserva .reserva__section--secu label {
     width: 43%;
-    margin: 3px 10px;
+    margin: 3px 0 3px auto;
     cursor: pointer; }
-  .reserva .reserva__section--secu input {
-    margin-right: 10px; }
+    .reserva .reserva__section--secu label input {
+      margin-right: 10px; }
   .reserva .reserva__section--terc {
     border-bottom: 3px dashed #0a1612; }
     .reserva .reserva__section--terc label {
       width: 43%;
-      margin: 3px 10px;
+      margin: 3px 0 3px auto;
       cursor: pointer; }
-    .reserva .reserva__section--terc input {
-      margin-right: 10px; }
+      .reserva .reserva__section--terc label input {
+        margin-right: 10px; }
   .reserva .reserva__section--cuar div, .reserva .reserva__section--cuar a {
     display: flex;
     justify-content: center;
